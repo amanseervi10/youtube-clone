@@ -10,10 +10,10 @@ const Feed = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    setVideos(null);
+    // setVideos(null);
     fetchAPI(`search?part=snippet&q=${selectedCategory}`)
-    .then((data) => {setVideos(data.items);});
-  });
+    .then((data) => {setVideos(data.items);console.log(data)});
+  },[selectedCategory]);
 
   return (
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>

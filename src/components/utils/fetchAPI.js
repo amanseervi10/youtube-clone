@@ -3,9 +3,11 @@ import axios from "axios";
 export const BASE_URL = "https://youtube-v31.p.rapidapi.com";
 
 const options = {
-  params: { part: "snippet", videoId: "M7FIvfx5J10" },
+  params: {
+    maxResults: 50,
+  },
   headers: {
-    "X-RapidAPI-Key": process.env.REACT_APP_RAPID_API_KEY,
+    'X-RapidAPI-Key': '476cfa3907msh3fb52ba85771363p1608f5jsn8eec40161945'  ,
     "X-RapidAPI-Host": "youtube-v31.p.rapidapi.com",
   },
 };
