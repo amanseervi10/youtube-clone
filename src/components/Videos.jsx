@@ -2,9 +2,11 @@ import React from "react";
 import { Stack, Box } from "@mui/material";
 import {VideoCard, ChannelCard} from './'
 
-const Videos = ({ videos }) => {
+const Videos = ({ videos,direction }) => {
+  if(!videos?.length) return 'Loading...';
   return (
     <Stack
+      direction={direction || 'row'}
       sx={{ flexDirection: { sx: "column", md: "row" } }}
       flexWrap="wrap"
       justifyContent="start"

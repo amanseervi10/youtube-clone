@@ -26,7 +26,7 @@ const VideoCard = ({
         fontFamily:'Roboto'
       }}
     >
-      <Link to={videoId ? `video/${videoId}` : `/video/cV2gBU6hKfY`}>
+      <Link to={videoId ? `/video/${videoId}` : `/video/cV2gBU6hKfY`}>
         <CardMedia
           image={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
